@@ -35,9 +35,7 @@ def escolher_opcao():
                   finalizar_app()
                   print('Opção Inválida!')
                   
-            
-      
-
+                  
 def main():
       exibir_nome_do_programa()
       exibir_opcoes()
