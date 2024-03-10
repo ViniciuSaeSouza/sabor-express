@@ -49,12 +49,13 @@
 # except Exception as e:
 #     print(f'Houve um erro: {e}')
 
-pessoa_info = [{'nome': 'Kauan', 'idade': 28, 'cidade': 'São Paulo'}]
+# pessoa_info = {'nome': 'Kauan', 'idade': 28, 'cidade': 'São Paulo'}
 
-pessoa_info['idade'] = 31
+# pessoa_info['idade'] = 31
 
-pessoa_info['profissão'] = 'Vendedor'
+# pessoa_info['profissão'] = 'Vendedor'
 
-del pessoa_info['cidade']
+# pessoa_info.pop('cidade')
 
-print(pessoa_info)
+
+# print(pessoa_info['idade'])

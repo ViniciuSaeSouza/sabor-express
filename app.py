@@ -34,6 +34,7 @@ def voltar_ao_menu_principal():
       main()
 
 def cadastrar_novo_restaurante():
+      '''Essa função é responsável por cadastar novos restaurantes com (Nome, Categoria, Status(Ativo ou desativado))'''
       exibir_subtitulo('Cadastro de novos restaurantes')
       nome_do_restaurante = input('Digite o nome do restaurante que deseja cadastrar: ')
       categoria = input(f'Digite a categoria do restaurante {nome_do_restaurante}: ')
@@ -43,6 +44,7 @@ def cadastrar_novo_restaurante():
       voltar_ao_menu_principal()
 
 def listar_restaurantes():
+      '''Função responsável por listar todos os restaurantes cadastrados nas lista (restaurantes)'''
       exibir_subtitulo('Restaurantes Listados:')
       print(f"{'Nome do restaurante'.ljust(22)} | {'Categoria'.ljust(20)} | Status do restaurante")
       for restaurante in restaurantes:
@@ -54,6 +56,7 @@ def listar_restaurantes():
       voltar_ao_menu_principal()
       
 def ativar_desativar_restaurante():
+      '''Função responsável por alterar o status de (ativado) ou (desativado) nos restaurantes'''
       exibir_subtitulo('Alterando Status do restaurante')
       nome_restaurante = input('Digite o nome do restaurante que deseja ativar ou desativar: ')
       restaurante_encontrado = False
@@ -68,13 +71,16 @@ def ativar_desativar_restaurante():
       voltar_ao_menu_principal()
 
 def opcao_invalida():
+      '''Função para quando for digitado uma opção inválida a pessoa possa voltar ao menu principal'''
       print('Opção Inválida\n')
       voltar_ao_menu_principal()
       
 def finalizar_app():
+      '''Função para finalizar o aplicativo, limpando a tela do console'''
       exibir_subtitulo('Finalizando App')
 
 def escolher_opcao():
+      '''Esta função é responsável por capturar o input de opção da lista (exibir_opcoes) e chamar a função responsável por cada opção'''
       try:
             opcao_escolhida = int(input('Escolha uma opção: '))
             match opcao_escolhida:
