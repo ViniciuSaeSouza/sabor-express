@@ -1,5 +1,7 @@
 import os
 
+import larissa
+
 restaurantes = [{'nome':'Praça Sushi', 'categoria':'Japonesa', 'ativo':False} , 
                 {'nome':'Pizza Express', 'categoria':'Pizzaria', 'ativo':True} , 
                 {'nome':'BurgerMax', 'categoria':'Lanches', 'ativo':False},
